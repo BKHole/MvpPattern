@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="?android:actionBarStyle"
+    android:fitsSystemWindows="true"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <ImageView
+        android:id="@+id/common_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/iv_back"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/common_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
+        tools:text="标题" />
+
+    <TextView
+        android:id="@+id/common_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_marginRight="14dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        tools:text="分享" />
+
+</android.support.v7.widget.Toolbar>
